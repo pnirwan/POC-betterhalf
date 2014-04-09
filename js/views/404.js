@@ -2,14 +2,14 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'text!templates/profile.html'
-], function($, _, Backbone, profile) {
+    'text!templates/404.html' 
+], function($, _, Backbone, fourO4) {
     return Backbone.View.extend({
-        el: $("#maincontent"),
+        el: $("#templateContent"),
 
         render: function() {
 
-            var compiledTemplate = _.template(profile);
+            var compiledTemplate = _.template(fourO4);
 
             this.$el.html(compiledTemplate);
         }

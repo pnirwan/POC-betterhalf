@@ -1,26 +1,26 @@
 
 .jcarousel-skin-tango{
-    float:left;
-    width:100%;
-    margin:0;
-    padding:0;
+	float:left;
+	width:100%;
+	margin:0;
+	padding:0;
 }
 
 .jcarousel-skin-tango li{
-    position:relative;
-    float:left;
-    margin:0;
-    width:auto;
-    padding:0;
+	position:relative;
+	float:left;
+	margin:0;
+	width:auto;
+	padding:0;
 }
 
 .jcarousel-skin-tango .jcarousel-container {
-    width:100%;
+	width:100%;
 }
 
 .jcarousel-skin-tango .jcarousel-direction-rtl {
-    direction: rtl;
-    width:100%;
+	direction: rtl;
+	width:100%;
 }
 
 .jcarousel-skin-tango .jcarousel-container-horizontal {
@@ -30,11 +30,11 @@
 
 .jcarousel-skin-tango .jcarousel-clip {
     overflow: hidden;
-    width:100%;
+	width:100%;
 }
 
 .jcarousel-skin-tango .jcarousel-clip-horizontal {
-    width:100%;
+	width:100%;
     height: auto;
 }
 
@@ -49,18 +49,18 @@
 .jcarousel-skin-tango .jcarousel-next-horizontal {
     position: absolute;
     top: -70px;
-    right: 15px;
+	right: 15px;  
     width: 25px;
     height: 14px;
     cursor: pointer;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;		
 }
 
 .jcarousel-skin-tango .jcarousel-next-horizontal:hover,
-.jcarousel-skin-tango .jcarousel-next-horizontal:focus,
+.jcarousel-skin-tango .jcarousel-next-horizontal:focus, 
 .jcarousel-skin-tango .jcarousel-next-horizontal:active{
     background-position: -75px 0;
 }
@@ -70,43 +70,43 @@
 .jcarousel-skin-tango .jcarousel-next-disabled-horizontal:focus,
 .jcarousel-skin-tango .jcarousel-next-disabled-horizontal:active {
     cursor: default;
-    background-color:#f2f2f2;
+	background-color:#f2f2f2;
     background-position: -50px 0;
 }
 
 .jcarousel-skin-tango .jcarousel-prev-horizontal {
     position: absolute;
     top: -70px;
-    right: 30px;
+	right: 30px;
     cursor: pointer;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;		
+	
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
 
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: inherit;
-    -webkit-font-smoothing: antialiased;
-
-    /* sprites.less reset */
-    display: inline;
-    width: auto;
-    height: auto;
-    line-height: normal;
-    vertical-align: baseline;
-    background-image: none;
-    background-position: 0% 0%;
-    background-repeat: repeat;
-    margin-top: 0;
-    margin: 0;
+  /* sprites.less reset */
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  margin-top: 0;
+      margin: 0;
     display: inline-block !important;
     text-align: center !important;
     color: #fff;
     width: 18px;
     height: 18px;
-    padding:3px;
+	padding:3px;
     font-size: 12px;
     line-height: 18px;
     text-shadow:none;
@@ -118,44 +118,44 @@
 }
 
 .jcarousel-skin-tango .jcarousel-prev-horizontal:before {
-    content: "\f104";
+content: "\f104"; 
 }
-.jcarousel-skin-tango .jcarousel-next-horizontal:before {
-    content: "\f105"; }
+.jcarousel-skin-tango .jcarousel-next-horizontal:before { 
+content: "\f105"; }
 
 .jcarousel-skin-tango .jcarousel-next-horizontal {
     position: absolute;
     top: -70px;
-    right: 0px;
+	right: 0px;
     cursor: pointer;
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;		
+	
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
 
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: inherit;
-    -webkit-font-smoothing: antialiased;
-
-    /* sprites.less reset */
-    display: inline;
-    width: auto;
-    height: auto;
-    line-height: normal;
-    vertical-align: baseline;
-    background-image: none;
-    background-position: 0% 0%;
-    background-repeat: repeat;
-    margin-top: 0;
-    margin-bottom:20px;
+  /* sprites.less reset */
+  display: inline;
+  width: auto;
+  height: auto;
+  line-height: normal;
+  vertical-align: baseline;
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+  margin-top: 0;
+      margin-bottom:20px;
     display: inline-block !important;
     text-align: center !important;
     color: #fff;
     width: 18px;
     height: 18px;
-    padding:3px;
+	padding:3px;
     font-size: 12px;
     line-height: 18px;
     text-shadow:none;
@@ -166,7 +166,7 @@
     -webkit-border-radius: 4px;
 }
 
-.jcarousel-skin-tango .jcarousel-prev-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover, 
 .jcarousel-skin-tango .jcarousel-prev-horizontal:focus {
     background-position: 0 0;
 }
@@ -179,6 +179,6 @@
 .jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:active {
     cursor: default;
     background-position: -25px 0;
-    background-color:#ddd
+	background-color:#ddd
 }
 
