@@ -6,9 +6,10 @@ define([ // Definining modules for require.js
     'views/home',
     'views/login',
     'views/register',
+    'views/profile',
     'views/404'
 ], function($, _, Backbone,
-    home, login, register, fourO4) {
+    home, login, register, profile, fourO4) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
