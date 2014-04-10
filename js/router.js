@@ -1,5 +1,4 @@
-// Filename: router.js
-define([ // Definining modules for require.js
+define([
     'jquery',
     'underscore',
     'backbone',
@@ -7,41 +6,60 @@ define([ // Definining modules for require.js
     'views/login',
     'views/register',
     'views/profile',
-    'views/404'
-], function($, _, Backbone,
-    home, login, register, profile, fourO4) {
+    'views/profiles'
+
+
+], function ($, _, Backbone, home, loginview, registerview, profileview, profilesview) {
 
     var AppRouter = Backbone.Router.extend({
         routes: {
-            ':route': 'loadView', // Implements the dynamic routing
-            '*actions': 'loadView'
+            // Define some URL routes
+            '':'home',
+
+
+            'login': 'showLogin',
+            'register':'showRegister',
+            'profile/:id':'showProfile',
+            'profiles':'showProfiles',
+            // Default
+            '*actions': 'home'
         }
     });
 
-    // TODO: Dynamic routing, paths should be like- products/analytics  :DONE
-
-
-    var initialize = function() {
+    var initialize = function () {
 
         var app_router = new AppRouter;
-
-        app_router.on('route:loadView', function(route) { // 'route' has the current routing path
-            route = route.slice(route.lastIndexOf('/') + 1, route.length); // Slices the routing path from '/'
-            if (route == '') {
-                var view = new home();
-                view.render();
-            } else {
-                try {  // Put try catch because route may have some nonexisting view name
-                    var view = null;
-                    eval('view= new ' + route + '()');
-                    view.render();
-                } catch (e) {
-                    // Route to 404 page
-                    var view= new fourO4();
-                    view.render();
-                }
-            }
+        console.log(location.hash);
+        app_router.on('route:showProfile', function (param) {
+            console.log(param);
+            // Call render on the module we loaded in via the dependency array
+            var Profileview = new profileview();
+            Profileview.render(param);
+        });
+        app_router.on('route:home', function () {
+            console.log('varsha');
+            // Call render on the module we loaded in via the dependency array
+            var Home = new home();
+            Home.render();
+        });
+        app_router.on('route:showLogin', function () {
+            console.log('varsha');
+            // Call render on the module we loaded in via the dependency array
+            var Loginview = new loginview();
+            Loginview.render();
+        });
+        app_router.on('route:showRegister', function () {
+            console.log('varsha');
+            // Call render on the module we loaded in via the dependency array
+            var Registerview = new registerview();
+            Registerview.render();
+        });
+        app_router.on('route:showProfiles', function(){
+            console.log("profiles");
+            var Profilesview = new profilesview();
+            Profilesview.render();
         })
+
         Backbone.history.start();
     };
     return {

@@ -1,9 +1,50 @@
-<div class="container">
+<header style="background-color: black">
+    <span class="navbar navbar-static-top fixed">
+
+                    <div class="navbar-inner " style="background-color: black">
+                        <div class="container" style="padding-top: 10px;padding-bottom: 15px">
+                            <div class="logo">
+                                <div class="span5">
+                                    <a href="#home">
+                                        <img src="http://betterhalfindia.com/wp-content/uploads/2014/03/BetterHalfIndiaLogo623x109.png"
+                                             alt="great-smiles"/>
+                                    </a>
+                                </div>
+                            </div>
+                            <div style="float: right; padding-top: 7px">
+                                <div class="navigation ">
+                                    <ul class="nav topnav center-align-mobile-navbar" style="color: #ffffff">
+                                        <li class="dropdown">
+                                           <a>Hi Poornima</a>
+                                        </li>
+                                        <li class="dropdown">
+                                          <a href="#home">LOGOUT</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+        </span>
+    <!-- Navbar
+   ================================================== -->
+
+</header>
+<section id="maincontent" style="padding-top: 30px">
+    <div class="container">
     <div class="span12">
+        <div class="row" style="background-color: #eee">
+
+            <div align="right" style="padding-right: 20px;padding-top: 8px">
+            <input id="searchtext" type="text" class="text" name="q" maxlength="100" value="Search" dir="ltr" autocomplete="off" spellcheck="false" style="outline: none;">
+            </div>
+        </div>
         <div class="row">
-            <div class="span3">
+            <div class="span3" style="padding-top:35px">
                 <div class="row">
-                    <img src="assets/img/bride.jpg">
+                    <img src="assets/img/bride.jpg" class="img-polaroid">
                 </div>
                 <div class="row">
                     <h5 class="rheading">Rate the picture<span></span></h5>
@@ -32,7 +73,62 @@
                 <form class="form-horizontal" action="" method="POST">
                     <div id="legend"><h5 class="rheading">Complete your profile to get started<span></span></h5>
                     </div>
-                    <div class="control-group" align="center">
+
+                    <div class="control-group" align="center"  style=" margin-bottom: 5px;">
+                        <!-- Username -->
+                        <label class="control-label">Name</label>
+                        <div class="controls">
+                            <p class="editable" align="left"></p>
+                        </div>
+                    </div>
+                    <div class="control-group"  align="center"  style=" margin-bottom: 5px;">
+                        <!-- Password-->
+                        <label class="control-label">Mobile</label>
+
+                        <div class="controls">
+                            <p class="editable" align="left">9953377970</p>
+                        </div>
+                    </div>
+                    <div class="control-group"  align="center"  style=" margin-bottom: 5px;">
+                        <!-- Password-->
+                        <label class="control-label">Profile created for</label>
+
+                        <div class="controls">
+                            <p class="editable" align="left">Sister</p>
+                        </div>
+                    </div>
+                    <div class="control-group" align="center"  style=" margin-bottom: 5px;">
+                        <!-- age-->
+                        <label class="control-label">Date Of Birth</label>
+
+                        <div class="controls">
+                            <p class="editable" align="left">27 may 2013</p>
+                        </div>
+                    </div>  <div class="control-group"  align="center"  style=" margin-bottom: 5px;">
+                    <!-- Password-->
+                    <label class="control-label">Religion</label>
+
+                    <div class="controls">
+                        <p class="editable" align="left">Hindu</p>
+                    </div>
+                </div>
+                    <div class="control-group"  align="center"  style=" margin-bottom: 10px;">
+                        <!-- Password-->
+                        <label class="control-label">Gender</label>
+
+                        <div class="controls">
+                            <p class="editable" align="left">Male</p>
+                        </div>
+                    </div>
+                    <div class="control-group"  align="center"  style=" margin-bottom: 5px;">
+                        <!-- Password-->
+                        <label class="control-label">Mother Tongue</label>
+
+                        <div class="controls">
+                            <p class="editable" align="left">Hindi</p>
+                        </div>
+                    </div>
+                    <div class="control-group" align="center"  style=" margin-bottom: 10px;">
                         <!-- status-->
                         <label class="control-label" for="status">Status</label>
 
@@ -41,24 +137,107 @@
                         </div>
                     </div>
 
-                    <div class="control-group" align="center">
-                        <!-- location-->
-                        <label class="control-label" for="locatioin">Location</label>
+                    <div class="control-group"  align="center"  style=" margin-bottom: 10px;">
+                        <!-- Password-->
+                        <label class="control-label">Location</label>
 
                         <div class="controls">
-                            <input type="text" id="locatioin" name="locatioin" placeholder="" class="input-xlarge">
+                            <select>
+                                <option value="" label="Select">Select</option>
+                                <option value="India" label="India" selected="selected">India</option>
+                                <option value="USA" label="USA">USA</option>
+                                <option value="United Kingdom" label="United Kingdom">United Kingdom</option>
+                                <option value="United Arab Emirates" label="United Arab Emirates">United Arab Emirates</option>
+                                <option value="Canada" label="Canada">Canada</option>
+                                <option value="Australia" label="Australia">Australia</option>
+                                <option value="New Zealand" label="New Zealand">New Zealand</option>
+                                <option value="Pakistan" label="Pakistan">Pakistan</option>
+                                <option value="Saudi Arabia" label="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Kuwait" label="Kuwait">Kuwait</option>
+                                <option value="South Africa" label="South Africa">South Africa</option>
+                                <option value="Afghanistan" label="Afghanistan">Afghanistan</option>
+                                <option value="Austria" label="Austria">Austria</option>
+                                <option value="Bahrain" label="Bahrain">Bahrain</option>
+                                <option value="Bangladesh" label="Bangladesh">Bangladesh</option>
+                                <option value="Belgium" label="Belgium">Belgium</option>
+                                <option value="Botswana" label="Botswana">Botswana</option>
+                                <option value="Brunei" label="Brunei">Brunei</option>
+                                <option value="Chile" label="Chile">Chile</option>
+                                <option value="China" label="China">China</option>
+                                <option value="Cyprus" label="Cyprus">Cyprus</option>
+                                <option value="Denmark" label="Denmark">Denmark</option>
+                                <option value="Dominican Republic" label="Dominican Republic">Dominican Republic</option>
+                                <option value="Fiji Islands" label="Fiji Islands">Fiji Islands</option>
+                                <option value="Finland" label="Finland">Finland</option>
+                                <option value="France" label="France">France</option>
+                                <option value="Germany" label="Germany">Germany</option>
+                                <option value="Greece" label="Greece">Greece</option>
+                                <option value="Guyana" label="Guyana">Guyana</option>
+                                <option value="Hong Kong SAR" label="Hong Kong SAR">Hong Kong SAR</option>
+                                <option value="Hungary" label="Hungary">Hungary</option>
+                                <option value="Indonesia" label="Indonesia">Indonesia</option>
+                                <option value="Iran" label="Iran">Iran</option>
+                                <option value="Ireland" label="Ireland">Ireland</option>
+                                <option value="Israel" label="Israel">Israel</option>
+                                <option value="Italy" label="Italy">Italy</option>
+                                <option value="Jamaica" label="Jamaica">Jamaica</option>
+                                <option value="Japan" label="Japan">Japan</option>
+                                <option value="Kenya" label="Kenya">Kenya</option>
+                                <option value="Malaysia" label="Malaysia">Malaysia</option>
+                                <option value="Maldives" label="Maldives">Maldives</option>
+                                <option value="Mauritius" label="Mauritius">Mauritius</option>
+                                <option value="Mexico" label="Mexico">Mexico</option>
+                                <option value="Nepal" label="Nepal">Nepal</option>
+                                <option value="Netherlands" label="Netherlands">Netherlands</option>
+                                <option value="Netherlands Antilles" label="Netherlands Antilles">Netherlands Antilles</option>
+                                <option value="Norway" label="Norway">Norway</option>
+                                <option value="Oman" label="Oman">Oman</option>
+                                <option value="Philippines" label="Philippines">Philippines</option>
+                                <option value="Poland" label="Poland">Poland</option>
+                                <option value="Qatar" label="Qatar">Qatar</option>
+                                <option value="Russia" label="Russia">Russia</option>
+                                <option value="Singapore" label="Singapore">Singapore</option>
+                                <option value="Spain" label="Spain">Spain</option>
+                                <option value="Sri Lanka" label="Sri Lanka">Sri Lanka</option>
+                                <option value="Sweden" label="Sweden">Sweden</option>
+                                <option value="Switzerland" label="Switzerland">Switzerland</option>
+                                <option value="Tanzania" label="Tanzania">Tanzania</option>
+                                <option value="Thailand" label="Thailand">Thailand</option>
+                                <option value="Trinidad and Tobago" label="Trinidad and Tobago">Trinidad and Tobago</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="control-group" align="center">
+
+                    <div class="control-group"  align="center"  style=" margin-bottom: 10px;">
+                        <!-- Password-->
+                        <label class="control-label">Education</label>
+
+                        <div class="controls">
+                            <select>
+                                <option value="" label="Select">Select</option>
+                                <option value="Bachelors" label="Bachelors" selected="selected">Bachelors</option>
+                                <option value="Masters" label="Masters">Masters</option>
+                                <option value="Doctorate" label="Doctorate">Doctorate</option>
+                                <option value="Diploma" label="Diploma">Diploma</option>
+                                <option value="Undergraduate" label="Undergraduate">Undergraduate</option>
+                                <option value="Associates degree" label="Associates degree">Associates degree</option>
+                                <option value="Honours degree" label="Honours degree">Honours degree</option>
+                                <option value="Trade school" label="Trade school">Trade school</option>
+                                <option value="High school" label="High school">High school</option>
+                                <option value="Less than high school" label="Less than high school">Less than high school</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group" align="center"  style=" margin-bottom: 10px;">
                         <!-- age-->
-                        <label class="control-label" for="age">Age</label>
+                        <label class="control-label" for="about">About</label>
 
                         <div class="controls">
-                            <input type="tel" id="age" name="age" placeholder="" class="input-xlarge">
+                            <textarea type="text" id="about" name="about" placeholder="" class="input-xlarge"/>
                         </div>
                     </div>
 
-                    <div class="control-group" align="center">
+                    <div class="control-group" align="center"  style=" margin-bottom: 10px;">
                         <!-- Button -->
                         <div class="controls">
                             <button class="btn btn-success">Submit</button>
@@ -67,8 +246,9 @@
                 </form>
 
             </div>
-            <div class="span3">
-                <div class="row" style="padding-left: 80px">
+            <div class="span1"></div>
+            <div class="span2">
+                <div class="row">
                     <h5 class="rheading">Rate the profile <span></span></h5>
                     <label class="radio">
                         10
@@ -115,5 +295,11 @@
 
             </div>
         </div>
+        <div class="row" style="background-color: #eee">
+            <div class="span3">
+            <h5 class="rheading">CONTACT/ CHAT ONLINE<span></span></h5>
+            </div>
+        </div>
     </div>
 </div>
+    </section>

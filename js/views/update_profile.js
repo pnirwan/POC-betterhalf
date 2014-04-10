@@ -2,28 +2,28 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'models/user',
+    'models/profile',
     'collections/profiles',
-    'text!templates/register.html'
-    ], function($, _, Backbone, user,collection, register) {
+    'text!templates/profile.html'
+    ], function($, _, Backbone, Profile,collection, profileview) {
         return Backbone.View.extend({
             el: $("#maincontent"),
 
             render: function() {
 
-                var compiledTemplate = _.template(register);
+                var compiledTemplate = _.template(profileview);
 
                 this.$el.html(compiledTemplate);
             },
             events: {
-                'click .register-form':'saveUser'
+                'click #update-button':'updateProfile'
             },
-            saveUser:function(ev){
+            updateProfile:function(ev){
                 ev.preventDefault();
                 console.log($('form').serializeObject());
                 var userdetails = $('form').serializeObject();
-                var User = new user(userdetails);
-                User.save(null, {
+                var profile = new Profile(userdetails);
+                profile.save(null, {
                     success: function(model, response) {
                         console.log(response);
                         if(response!='undefined'){

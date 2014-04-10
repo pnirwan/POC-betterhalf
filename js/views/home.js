@@ -3,15 +3,15 @@ define([
     'underscore',
     'backbone',
     'text!templates/home.html'
-], function($, _, Backbone, home) {
-    return Backbone.View.extend({
-        el: $("#maincontent"),
+    ], function($, _, Backbone, home) {
+        return Backbone.View.extend({
+            el: $("#maincontent"),
 
-        render: function() {
+            render: function() {
 
-            var compiledTemplate = _.template(home);
+                var compiledTemplate = _.template(home);
 
-            this.$el.html(compiledTemplate);
-        }
+                this.$el.html(compiledTemplate);
+            }
+        });
     });
-});
